@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">AIMM</string>
+    <string name="nameOfApp">AIMM</string>
+    <string name="subtitle">Alternative Instructional Materials in Math 10</string>
+    <string name="app_title_toolbar">AIMM</string>
+    <string name="topic_textview_title">Topics</string>
+
+    <string name="topic_one">Permutation</string>
+    <string name="topic_two">Combinations</string>
+    <string name="topic_three">Combination Formula</string>
+    <string name="topic_four">Permutation or Combination</string>
+    <string name="start_cardview_textview">Start</string>
+    <string name="start_topic_one">Topic 1</string>
+    <string name="start_topic_two">Topic 2</string>
+    <string name="start_topic_three">Topic 3</string>
+    <string name="start_topic_four">Topic 4</string>
+
+
+    <string name="tutorial_button">Tutorial</string>
+    <string name="play_button">Play</string>
+    <string name="goodluck_text">Goodluck!</string>
+
+    <string name="question">The are 8 students in a classroom but only 5 can take the examination at a time. How many possible ways that the teacher will arrange so that all of the students are able to have their examination?</string>
+
+    <string name="result">Result</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="quiz_result">Quiz Result</string>
+    <string name="your_score">Score:</string>
+    <string name="your_time">Time :</string>
+    <string name="finish">Finish</string>
+    <string name="clear">Clear</string>
+
+    <string name="about_item">Credits</string>
+    <string name="result_item">Whole Quiz Result</string>
+
+
+    <!--Table-->
+    <string name="colTopic">Topics</string>
+    <string name="scoreCol">Score</string>
+    <string name="timeCol">Time</string>
+    <string name="topicOne">Topic 1</string>
+    <string name="topicTwo">Topic 2</string>
+    <string name="topicThree">Topic 3</string>
+    <string name="topicFour">Topic 4</string>
+    <string name="totalCol">Total</string>
+    <string name="zero">0</string>
+    <string name="timeFormat">00:00</string>
+    <string name="scoreOver">0 / 25</string>
+
+</resources>

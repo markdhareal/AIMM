@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".CombinationQuiz">
+
+    <ImageView
+        android:id="@+id/questionNumberComb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/one" />
+
+    <Chronometer
+        android:id="@+id/timerTextComb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/textWhite"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linearScoreComb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/questionNumberComb"
+        >
+
+        <TextView
+            android:id="@+id/scoreViewComb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textColor="@color/textWhite"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/questionViewComb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearScoreComb"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/question"
+        android:textColor="@color/textWhite"
+        android:textSize="25sp" />
+
+
+    <worker8.com.github.radiogroupplus.RadioGroupPlus
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/questionViewComb"
+        android:id="@+id/radioGroupComb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutOneComb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background_options"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/optionTextOneComb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="One"
+                android:textColor="@color/textWhite"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/option1Comb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutTwoComb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/background_options"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/b" />
+
+
+            <TextView
+                android:id="@+id/optionTextTwoComb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Two"
+                android:textColor="@color/textWhite"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/option2Comb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/resultBtnComb"
+            android:background="@drawable/button_normal_press"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textColor="@color/textWhite"
+            />
+
+        <Button
+            android:id="@+id/confirmBtnComb"
+            android:background="@drawable/button_normal_press"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textColor="@color/textWhite"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

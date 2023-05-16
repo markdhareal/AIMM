@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WholeQuizResult">
+
+    <include
+        android:id="@+id/toolBarID"
+        layout="@layout/toolbar_layout"/>
+
+    <TextView
+        android:text="@string/result_item"
+        android:textColor="@color/background"
+        android:textSize="45sp"
+        android:fontFamily="@font/baloo"
+        android:id="@+id/wholeResultTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolBarID"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/resultTableImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/wholeResultTextId"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/result_table"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TableLayout
+        android:id="@+id/wholeTable"
+        android:layout_below="@+id/resultTableImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <!-- Heading -->
+        <TableRow
+            android:background="@color/background"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/colTopic"
+                android:textColor="@color/textWhite"
+                android:padding="10sp"
+                android:textSize="15sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreCol"
+                android:textColor="@color/textWhite"
+                android:padding="10sp"
+                android:textSize="15sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeCol"
+                android:textColor="@color/textWhite"
+                android:padding="10sp"
+                android:textSize="15sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Row 1-->
+        <TableRow
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topicOne"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/scoreTopicOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/timeTopicOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeFormat"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topicTwo"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/scoreTopicTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/timeTopicTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeFormat"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topicThree"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/scoreTopicThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/timeTopicThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeFormat"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Row 4-->
+        <TableRow
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topicFour"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/scoreTopicFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/zero"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/timeTopicFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeFormat"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Row 5-->
+
+        <TableRow
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/totalCol"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/totalScoreText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/scoreOver"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/clearWholeResultId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal_press"
+            android:fontFamily="@font/baloo"
+            android:text="@string/clear"
+            android:textColor="@color/textWhite" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/finishWholeResultId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal_press"
+            android:fontFamily="@font/baloo"
+            android:text="@string/finish"
+            android:textColor="@color/textWhite" />
+    </LinearLayout>
+
+
+</RelativeLayout>

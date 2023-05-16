@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ResultAct">
+
+    <TextView
+        android:id="@+id/resultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/quiz_result"
+        android:textColor="@color/textWhite"
+        android:textSize="65sp" />
+
+    <ImageView
+        android:id="@+id/imageQuizResult"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/scoreTimeId"
+        android:layout_below="@+id/resultId"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/congratulation" />
+
+
+    <RelativeLayout
+        android:id="@+id/scoreTimeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/scoreTextResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="@string/your_score"
+            android:textColor="@color/textWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/scoreInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo"
+            android:text="0"
+            android:textColor="@color/textWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/timeTextResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoreTextResult"
+            android:fontFamily="@font/baloo"
+            android:text="Time  :"
+            android:textColor="@color/textWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/yourTimeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoreInt"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/timeTextResult"
+            android:fontFamily="@font/baloo"
+            android:text="00:00"
+            android:textColor="@color/textWhite"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finishId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_normal_press"
+        android:fontFamily="@font/baloo"
+        android:text="@string/finish"
+        android:textColor="@color/textWhite" />
+
+</RelativeLayout>
